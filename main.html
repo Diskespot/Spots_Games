@@ -181,13 +181,13 @@
   }
   .feature p { color: var(--muted); }
 
-  /* Characters */
-  .characters {
+  /* Screens */
+  .Screens {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
   }
-  .character {
+  .Screen {
     position: relative;
     aspect-ratio: 3/4;
     border-radius: 20px;
@@ -195,20 +195,20 @@
     cursor: pointer;
     transition: transform 0.3s;
   }
-  .character:hover { transform: scale(1.03); }
-  .character-bg {
+  .Screen:hover { transform: scale(1.03); }
+  .Screen-bg {
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, var(--c1, #7b5cff), var(--c2, #00e0ff));
   }
-  .character-info {
+  .Screen-info {
     position: absolute;
     bottom: 0; left: 0; right: 0;
     padding: 1.5rem;
     background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
   }
-  .character-info h4 { font-size: 1.4rem; margin-bottom: 0.25rem; }
-  .character-info p { font-size: 0.9rem; color: var(--muted); }
+  .Screen-info h4 { font-size: 1.4rem; margin-bottom: 0.25rem; }
+  .Screen-info p { font-size: 0.9rem; color: var(--muted); }
 
   /* CTA */
   .cta {
@@ -257,94 +257,88 @@
   <ul class="nav-links" id="navLinks">
     <li><a href="#about">Об игре</a></li>
     <li><a href="#features">Особенности</a></li>
-    <li><a href="#characters">Герои</a></li>
+    <li><a href="#Screens">Скриншоты</a></li>
     <li><a href="#download">Скачать</a></li>
   </ul>
 </nav>
 
 <section class="hero">
   <h1>Shattered Castle Defence</h1>
-  <p>Невероятная Tower Defence в sci-fi-средневековой стилистике. Защищайте короля разрушенного замка от наплыва агрессивных фигурок и монстров! Используйте пушки и стратегию чтобы достичь цели и сохранить короля в надежной защите.</p>
+  <p>Новая Tower Defence в sci-fi-средневековой стилистике. Защищайте короля разрушенного замка от наплыва агрессивных фигурок и монстров! Используйте пушки и стратегию чтобы достичь цели и сохранить короля в надежной защите.</p>
   <a href="#download" class="btn">К игре</a>
 </section>
 
 <section id="about">
-  <h2 class="section-title">Об <span>игре</span></h2>
-  <p style="text-align:center; max-width:800px; margin:0 auto; color:var(--muted); font-size:1.1rem;">
-    Shattered Castle Defence - мобильная игра в жанре Tower Defence (Защита башни), которая сочетает в себе стили научной фантастики и средневековой тематики. Цель игры - защитить короля разрушенного замка от злобных монстров с помощью турелей и уникальной системы микса пушек. Параллельно с этим вам предстоит улучшать пушки, развивать технологии в древе исследований и сражаться с безжалостными боссами армий монстров.
-  </p>
+  <div class="cta">
+    <img 
+      src="Img/TDIcon.png" 
+      width="200" 
+      height="200" 
+      loading="lazy">
+    <h2 class="section-title">Об <span>игре</span></h2>
+    <p style="text-align:center; max-width:800px; margin:0 auto; color:var(--muted); font-size:1.1rem;">
+      Shattered Castle Defence - мобильная игра в жанре Tower Defence (Защита башни), которая сочетает в себе стили научной фантастики и средневековой тематики. Цель игры - защитить короля разрушенного замка от злобных монстров с помощью турелей и уникальной системы микса пушек. Параллельно с этим вам предстоит улучшать пушки, развивать технологии в древе исследований и сражаться с безжалостными боссами армий монстров.
+    </p>
+  </div>
 </section>
 
 <section id="features">
-  <h2 class="section-title">Особенности <span>игры</span></h2>
-  <div class="features">
-    <div class="feature">
-      <div class="feature-icon">🚀</div>
-      <h3>Уникальная система постройки пушек</h3>
-      <p>Используйте разные комбинации строений: 7 вариантов фундамента и 7 разнообразных пушек. Каждый уровень требует стратегии к выбору построек.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🎵</div>
-      <h3>Атмосферная музыка</h3>
-      <p>Несколько альбомов качественной музыки, идеально передающих глубокую атмосферу игры.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">👥</div>
-      <h3>Живые герои</h3>
-      <p>12 уникальных персонажей с глубокой историей и ветвящимися диалогами.</p>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🎨</div>
-      <h3>Стильная графика</h3>
-      <p>Современная трехмерная графика в высоком разрешении с хорошей оптимизацией для мобильных устройств</p>
+  <div class="cta">
+    <img 
+      src="Img/Eye.png" 
+      width="200" 
+      height="200" 
+      loading="lazy">
+    <h2 class="section-title">Особенности <span>игры</span></h2>
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🚀</div>
+        <h3>Уникальный геймплей</h3>
+        <p>Используйте разные комбинации строений: 7 вариантов фундамента и 7 разнообразных пушек. Каждый уровень требует стратегии к выбору построек.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎵</div>
+        <h3>Атмосферная музыка</h3>
+        <p>Несколько альбомов качественной музыки, идеально передающих глубокую атмосферу игры.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎨</div>
+        <h3>Стильная графика</h3>
+        <p>Современная трехмерная графика в высоком разрешении с хорошей оптимизацией для мобильных устройств</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="characters">
-  <h2 class="section-title">Выбери <span>героя</span></h2>
-  <div class="characters">
-    <div class="character">
-      <div class="character-bg" style="--c1:#ff006e; --c2:#8338ec;"></div>
-      <div class="character-info">
-        <h4>Айра</h4>
-        <p>Пилот-ас, повелительница скорости</p>
-      </div>
-    </div>
-    <div class="character">
-      <div class="character-bg" style="--c1:#06ffa5; --c2:#00b4d8;"></div>
-      <div class="character-info">
-        <h4>Ксар</h4>
-        <p>Древний воин из туманности Ориона</p>
-      </div>
-    </div>
-    <div class="character">
-      <div class="character-bg" style="--c1:#ffbe0b; --c2:#fb5607;"></div>
-      <div class="character-info">
-        <h4>Векс</h4>
-        <p>Гениальный инженер и хакер</p>
-      </div>
-    </div>
-    <div class="character">
-      <div class="character-bg" style="--c1:#3a86ff; --c2:#7b5cff;"></div>
-      <div class="character-info">
-        <h4>Нова</h4>
-        <p>Телепат, хранительница знаний</p>
-      </div>
+<section id="Screens">
+  <div class="cta">
+    <img 
+        src="Img/Portal.png" 
+        width="200" 
+        height="200" 
+        loading="lazy">
+    <h2 class="section-title">Скриншоты <span>игры</span></h2>
+    <div class="Screens">
+      <img 
+      src="Img/Screen.png" 
+      loading="lazy">
+     <img 
+      src="Img/Screen2.png" 
+      loading="lazy">
     </div>
   </div>
 </section>
 
 <section id="download">
   <div class="cta">
-    <h2>Готов к приключению?</h2>
-    <p>Присоединяйся к миллионам игроков уже сегодня</p>
-    <a href="#" class="btn">Скачать бесплатно</a>
+    <h2 class="section-title"><span>Игра</span></h2>
+    <p>В данный момент игра находится на стадии разработки. Подпишитесь на наш ТГ канал для получения новостей, девлогов, тестирований, опросов.</p>
+    <a href="https://t.me/fullitro_spot" class="btn">Подписаться</a>
   </div>
 </section>
 
 <footer>
-  © 2026 NEBULA QUEST. Все права защищены. Сделано с ❤️ для любителей космоса.
+  © 2026 Shattered Castle Defence. Все права защищены.
 </footer>
 
 <script>
